@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script>
+      // بناخد ايليمنت بالاي دي و نغير اللون الي اللون الاحمر بس دا مش هيشتغل عشان الايليمنت لسا محملش
+      document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+      // بنغير لو الايليمنت للون الاحمر و لكن في شرط ان التنفيز يبقي بعد تحميل الصفحة
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="el">Page Title</h1>
+    <script>
+      // هنا هتغير اللون عادي عشان هنا احنا حطينا الاسكريبت في الاخر
+      document.getElementById("el").style.color = "red";
+    </script>
+  </body>
+</html>
